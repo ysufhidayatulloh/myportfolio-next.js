@@ -15,8 +15,8 @@ const About = () => {
             <div className="flex flex-col w-full gap-4 text-base font-medium lgl:w-2/3 text-textDark">
                 <p>
                     Hello! ,My name is Yusuf Mohammad and I enaoy creating things that live pn the internate. 
-                    My internate in web development started back in 2023 when I decided to try editing ustom 
-                    Tumblr themes - turns out hacking together a custom reblog button taught me a lot about HTML & CSS!
+                    My internate in web development started back in 2023 when I decided to try editing custom 
+                    Company profile themes - turns out hacking together a custom reblog button taught me a lot about HTML & CSS!
                 </p>
                 <p>
                     Fast-forward to today, and I had the privilege of working at an advertising agency, a star-up,{" "}
@@ -85,19 +85,20 @@ const About = () => {
                     </li>
                 </ul>
             </div>
-            <div className="relative w-1/4 group">
+            <div className="relative w-full group lgl:w-1/4">
                 <div className="absolute w-full rounded-lg h-80 -left-6 -top-6">
                     <div className="relative z-20 flex w-full h-full pl-6 lgl:pl-0"> 
                         <Image 
-                            className="h-full rounded-lg object-countain"
+                            className="h-full rounded-lg object-cover"
                             src={profileImg}
                             alt="profile"
                         />
                         <div className="absolute top-0 left-0 hidden w-full rounded-md h-80 lgl:inline-block bg-textGreen/10 group-hover:bg-transparent duration-300:">
                         </div>
                     </div>
-                        <div className="hidden w-full transition-transform duration-300 border-2 rounded-md lgl:inline-flex h-70 border-textGreen group-hover:-translate-y-2">
-                        </div>
+                      <div className="hidden w-full transition-transform duration-300 border-2 rounded-md lgl:inline-flex 
+                      h-70 border-textGreen group-hover:-translate-y-2 ">
+                      </div>  
                 </div> 
             </div>
         </div>

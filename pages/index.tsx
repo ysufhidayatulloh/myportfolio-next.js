@@ -5,6 +5,11 @@ import Benner from "@/components/Benner";
 import Head from "next/head";
 import {motion} from "framer-motion";
 import About from "@/components/About";
+import Experience from "@/components/Experience";
+import Project from "@/components/Project";
+import Archive from "@/components/Archive";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -15,7 +20,8 @@ export default function Home() {
         <meta name="viewpor" content="width=device-width, initial-scale=1"/>
         <link rel="icon" href="/favicon.ico"/>
       </Head>
-      <main className="w-full h-screen overflow-x-hidden overflow-y-scroll font-bodyFont bg-bodyColor text-textLight">
+      <main className="w-full h-screen overflow-x-hidden overflow-y-scroll font-bodyFont bg-bodyColor text-textLight
+      scrollbar scrollbar-track-textDark/20 scrollbar-thumb-textDark/60">
         <Navbar />
         <div className="w-full h-[88vh] xl:flex items-center gap-20 justify-between">
           <motion.div
@@ -29,11 +35,11 @@ export default function Home() {
           <div className="h-[88vh] w-full mx-auto p-4">
             <Benner />
             <About />
-            {/* Experience */}
-            {/* Projects */}
-            {/* Archive */}
-            {/* Contact */}
-            {/* Footer */}
+            <Experience />
+            <Project />
+            <Archive />
+            <Contact />
+            <Footer />
           </div>
           <motion.div 
             initial={{ opacity: 0 }}
